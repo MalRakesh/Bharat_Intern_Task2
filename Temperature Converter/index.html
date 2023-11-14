@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="temp-convert">
+            <div class="mobile">
+                <p>12:40 AM</p>
+                <div>
+                    <i class='bx bx-no-signal' style='color:#ff0000'></i>
+                    <i class='bx bx-wifi' undefined></i>
+                    <i class='bx bxs-battery-charging' style='color:#06ff00'></i>
+                </div>
+            </div>
+            <h2 class="title">Temperature Converter</h2>
+            <div class="result">
+                <span class="res-title">Result</span>
+                <h2 class="celsius" id="Celsius"></h2>
+            </div>
+            <div class="deg">
+                <div class="deg-field">
+                    <label for="deg">Degree Celsius (&deg;c)</label>
+                    <input type="number" name="deg" id="deg">
+                </div>
+                <div class="temp-field">
+                    <label for="temp">Type</label>
+                    <select name="temp" id="temp-type" autocomplete="on">
+                        <option value="Fahrenheit" id="temp1">Fahrenheit</option>
+                        <option value="Kelvin" id="temp2">Kelvin</option>
+                        <option value="Reaumur" id="temp3">Reaumur</option>
+                        <option value="Rankine" id="temp4">Rankine</option>
+                    </select>
+                </div>
+            </div>
+            <button id="convert">Convert</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
